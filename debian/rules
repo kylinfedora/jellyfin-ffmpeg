@@ -43,6 +43,17 @@ CONFIG := --prefix=${TARGET_DIR} \
 	--enable-libzvbi \
 	--enable-libzimg \
 	--enable-libfdk-aac \
+	--enable-libdrm \
+        --enable-librga \
+        --enable-rkmpp \
+        --disable-libopenh264 \
+        --disable-vaapi \
+        --disable-vdpau \
+        --disable-decoder=h264_v4l2m2m \
+        --disable-decoder=vp8_v4l2m2m \
+        --disable-decoder=mpeg2_v4l2m2m \
+        --disable-decoder=mpeg4_v4l2m2m \
+
 
 CONFIG_ARM_COMMON := --toolchain=hardened \
 	--enable-cross-compile \
