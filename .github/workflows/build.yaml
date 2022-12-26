@@ -25,19 +25,3 @@ jobs:
       codenames: '["buster", "bullseye"]'
       architectures: '["amd64", "arm64", "armhf"]'
       release: false
-
-  build_ubuntu:
-    uses: ./.github/workflows/_meta.yaml
-    with:
-      distro: 'ubuntu'
-      codenames: '["jammy", "focal", "bionic", "impish"]'
-      architectures: '["amd64", "arm64", "armhf"]'
-      release: false
-
-  build_windows:
-    uses: ./.github/workflows/_meta.yaml
-    with:
-      distro: 'windows'
-      codenames: '["windows"]'
-      architectures: '["win64"]'
-      release: false
